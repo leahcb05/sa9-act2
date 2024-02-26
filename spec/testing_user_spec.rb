@@ -2,7 +2,7 @@ require '../testing_user'
 
 RSpec.describe User do
   describe "#log_in" do
-    it "logs the user in" do
+    it "logs user in" do
       user = User.new('garfield')
       user.log_in
       expect(user.logged_in).to eq(true)
@@ -10,7 +10,7 @@ RSpec.describe User do
   end
 
   describe "#log_out" do
-    it "logs the user out" do
+    it "logs user out" do
       user = User.new('garfield')
       user.log_in
       user.log_out
@@ -19,7 +19,7 @@ RSpec.describe User do
   end
 
   describe "#username" do
-    it "returns the correct username" do
+    it "returns username" do
       username = 'garfield'
       user = User.new(username)
       expect(user.username).to eq(username)
